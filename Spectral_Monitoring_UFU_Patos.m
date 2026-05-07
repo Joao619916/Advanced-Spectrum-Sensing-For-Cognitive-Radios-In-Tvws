@@ -24,7 +24,7 @@ function varargout = Spectral_Monitoring_UFU_Patos(varargin)
 % See also: GUIDE, GUIDATA, GUIHANDLES
 % Edit the above text to modify the response to help Spectral_Monitoring_UFU_Patos
 
-% Last Modified by GUIDE v2.5 10-Aug-2023 15:38:41
+% Last Modified by GUIDE v2.5 07-May-2026 13:33:26
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;

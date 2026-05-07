@@ -1,8 +1,8 @@
 SPECTRUM SENSING AND MONITORING USING SDR
 
 AUTHORS
-- Joao Victor Fernandes Borges
-- Prof. Andre Antonio dos Anjos
+- João Victor Fernandes Borges (Undergraduate Student in Electronic and Telecommunications Engineering, UFU)
+- Prof. Dr. André Antônio dos Anjos
 
 CODE DESCRIPTIONS
 
