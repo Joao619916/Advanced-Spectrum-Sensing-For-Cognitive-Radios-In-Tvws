@@ -261,19 +261,25 @@ while 1
     %% Incrementing Channel
      if Channel == Channel_max
          Channel = Channel_min;
+         
+            % GRÁFICO 1: OCUPAÇÃO (BARRAS VERMELHAS)
             axes(handles.axes1);
-            bar(Monitoring_Vector,Channel_Decision,'r');
+            cla(handles.axes1); % Limpa apenas os dados, mantém os títulos
+            bar(Monitoring_Vector, Channel_Decision, 'r'); 
+            title('Spectral Occupancy');
             xlabel('UHF Channels');
-            ylabel('Channel occupation');
+            ylabel('Status (Occupied=1)');
     
+            % GRÁFICO 2: ENERGIA (BARRAS AZUIS)
             axes(handles.axes2);
-            bar(Monitoring_Vector,T_channel_vector)
-            xlabel('UHF Channels')
-            ylabel('Energy')
+            cla(handles.axes2); % Limpa apenas os dados
+            bar(Monitoring_Vector, T_channel_vector);
+            title('Measured Energy per Channel');
+            xlabel('UHF Channels');
+            ylabel('Energy Level');
+            
             toc
             tic
-  
-         
      else
          Channel = Channel + 1;
      end
@@ -293,7 +299,7 @@ while 1
     drawnow
 	if get(handles.pushbutton2, 'userdata') % stop condition
         set(handles.edit3,'String','Sensing UHF channels stopped');
-        cla(handles.axes1,'reset');
+        cla(handles.axes1);
         set(handles.pushbutton2,'userdata',0)
 		break;
 	end
